@@ -1,0 +1,155 @@
+.bg-url {
+    background-image: url('https://khachhang.giaohangtietkiem.vn/web/img/icons/bkg-tick-green.png');
+    background-repeat: no-repeat;
+  }
+
+  .btn-bounce {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .btn-bounce:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-bounce:active {
+    transform: translateY(2px);
+  }
+
+
+  .icon-live-anim path:nth-child(2),
+  .icon-live-anim path:nth-child(4) {
+    animation: live-anim 1.2s steps(3, end) infinite;
+  }
+  
+  .icon-live-anim path:nth-child(3),
+  .icon-live-anim path:nth-child(5) {
+    animation: live-anim 1.2s 0.6s steps(3, end) infinite;
+  }
+  
+  @keyframes live-anim {
+    0%, 100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+
+  
+
+ 
+  
+  
+  .header {
+    border: 1px solid lightgray;
+    padding: 40px 0px 20px 0px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .header .icon-back {
+    font-size: 30px;
+    color: rgb(6,146,85);
+  }
+  
+  .header .order .order-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a0a0a;
+  }
+  
+  .header .order .order-status {
+    color: #f29702;
+    font-weight: 600;
+  }
+  
+  .header .icon-brand {
+    font-size: 30px;
+    color: rgb(6,146,85);
+  }
+  
+  .content {
+    border: 1px solid lightgray;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .content .timeline .item.active .item-description:before {
+    background-color: rgb(6,146,85);
+  }
+  
+  .content .timeline .item {
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .content .timeline .item:last-child {
+    border-bottom: none;
+  }
+  
+  .content .timeline .item:last-child:before {
+    display: none;
+  }
+  
+  .content .timeline .item:before {
+    border-left: 3px solid rgb(6,146,85);
+    content: '';
+    z-index: 1;
+    height: 102%;
+    left: 135px;
+    position: absolute;
+    opacity: 0.4;
+  }
+  
+  .content .timeline .item .item-label {
+    position: absolute;
+  }
+  
+  .content .timeline .item .item-label .item-label-date {
+    color: #a6a6a6;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  
+  .content .timeline .item .item-label .item-label-hour {
+    font-weight: 600;
+    font-size: 17px;
+    float: right;
+  }
+  
+  .content .timeline .item .item-description {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .content .timeline .item .item-description:before {
+    border: 2px solid rgb(6,146,85);
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    content: '';
+    z-index: 1;
+    left: 125px;
+    position: absolute;
+    background-color: #fff;
+    display: block;
+  }
+  
+  .content .timeline .item .item-description .item-description-status {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  .content .timeline .item .item-description .item-description-location {
+    color: #a6a6a6;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
